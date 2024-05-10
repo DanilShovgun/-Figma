@@ -1,0 +1,210 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-padding-top: 132px; /* Отступ сверху при скроллинге, равен высоте шапки */
+}
+ 
+header {
+  background-color: #007765;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+h2 {
+  color: #007765;
+  font-size: 64px;
+  margin-top: 48px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+header img {
+  margin-left: 55px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  margin-right: 55px;
+  font-size: 24px;
+}
+
+nav a {
+  color : white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.centered-text {
+  text-align: left;
+}
+
+.hero {
+  background-image: url("img/Jumbotron.png");
+  width: 100%;
+  height: 487px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFF;
+  font-size: 72px;
+}
+
+.together {
+  background-image: url("img/Hero.png");
+  width: 100%;
+  height: 403px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFF;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.problem {
+  background-color: #EEEEEE;
+  height: 719px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.problem h2 {
+  background-color: #EEEEEE; /* Добавляем цвет фона, идентичный цвету фона блока .problem */
+  display: inline-block; /* Этот стиль применяется для того, чтобы цвет фона распространялся только на область вокруг текста h2, не на всю ширину родительского блока */
+  padding: 10px 15px; /* Добавляем небольшие отступы вокруг текста, чтобы цвет фона отображался правильно */
+}
+
+.problem p {
+  font-size: 28px;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+
+.introducing {
+  background-color: #FFFFFF;
+  height: 604px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.introducing p {
+  font-size: 32px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-top: 60px;
+}
+
+.team {
+  background-color: #EEEEEE;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Разрешить перенос элементов */
+  justify-content: center; /* Центрировать элементы по горизонтали */
+  padding: 20px 0; /* Добавить отступы сверху и снизу */
+}
+
+.team h2 {
+  width: 100%;
+  font-size: 64px;
+  margin-bottom: px;
+}
+
+.member {
+  width: 400px; /* Фиксированная ширина для каждого члена команды */
+  padding: 20px; /* Внутренние отступы */
+  margin: 10px; /* Внешние отступы */
+  border-radius: 10px; /* Скругленные углы */
+}
+
+.member img {
+  width: 168px;
+  height: 168px;
+  margin-bottom: 10px;
+}
+
+ 
+.member h3 {
+  font-style: italic;
+}
+ 
+.member p {
+  color: #000000;
+}
+
+.member h3, .member p {
+  margin: 5px 0; /* Уменьшаем отступы между именем и должностью */
+}
+
+footer {
+  height: 176px;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+ 
+@media only screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+  nav a {
+    margin: 5px;
+  }
+ 
+  .member img {
+    width: 80px;
+    height: 80px;
+  }
+}
+ 
